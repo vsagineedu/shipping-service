@@ -1,10 +1,15 @@
 {
-  "name": "shipping-service",
+  "name": "shipping-service-10",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest tests",
+    "start": "node src/app.js"
+  },
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.x"
   },
   "repository": {
     "type": "git",
@@ -19,5 +24,12 @@
   "homepage": "https://github.com/vsagineedu/shipping-service#readme",
   "jest": {
     "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "sinon": "^7.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.17.0"
   }
 }
